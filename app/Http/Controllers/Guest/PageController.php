@@ -9,9 +9,12 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     public function index(){
-
         $movies = Movie::all();
-
         return view("home", compact("movies"));
+    }
+
+    public function detail_movie($id){
+        $movie = Movie::find($id);
+        return view("detailMovie", compact("movie"));
     }
 }
