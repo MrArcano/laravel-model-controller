@@ -12,3 +12,18 @@ header{
         }
     }
 }
+
+main{
+    .card{
+        width: 300px;
+        min-height: 130px;
+        .card-body{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            a{
+                align-self: flex-end;
+            }
+        }
+    }
+}
