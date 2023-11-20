@@ -1,0 +1,14 @@
+body{
+    background-color: grey;
+}
+
+header{
+    a.nav-link{
+        text-decoration: none;
+        color: rgb(100, 0, 0);
+
+        &:hover{
+            color: rgb(150, 0, 0);
+        }
+    }
+}

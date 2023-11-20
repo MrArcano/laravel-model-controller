@@ -1,7 +1,7 @@
 <header>
-    <ul class="nav">
+    <ul class="nav justify-content-center">
         <li class="nav-item">
-            <h1><a class="nav-link active" aria-current="page" href="{{ route('home')}}">Home</a></h1>
+            <h1><a class="nav-link" href="{{ route('home')}}">Boolfix</a></h1>
         </li>
     </ul>
 </header>

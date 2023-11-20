@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-    <h1 class="text-center">Dettaglio: {{ $movie->title }}</h1>
+    <h1 class="text-center mb-4">Dettaglio film</h1>
 
     <div class="card text-bg-dark m-auto" style="width: 350px;">
         <div class="card-body">
