@@ -10,9 +10,12 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     public function index(){
-        $movies = Movie::all();
-        $covers = Cover::all();
-        return view("home", compact("movies","covers"));
+
+        $movies = Movie::select('*')
+                    ->join('covers', 'covers.movie_id', '=', 'movies.id')
+                    ->get();
+
+        return view("home", compact("movies"));
     }
 
     public function detail_movie($id){
